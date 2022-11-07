@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Lato";
+  src: url("http://localhost:3000/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("http://localhost:3000/fonts/Lato/Lato-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("http://localhost:3000/fonts/Lato/Lato-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("http://localhost:3000/fonts/Lato/Lato-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica Neue, Helvetica, arial;
+  background-color: #003865;
+  --primary-bg-color: #003865;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato, Helvetica Neue, Helvetica, arial;
+  font-weight: initial;
+}
+
+.wrapper {
+  background-color: white;
+  padding: 54px 36px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-width: 400px;
+  min-width: min(400px, 100vw);
+  max-width: 400px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.api {
+  padding: 36px 0px;
+  position: relative;
+}
+
+.entry-item label, .attrEntry label {
+  font-size: 0.8em;
+  color: #000000AA;
+}
+
+.entry-item input, .attrEntry input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  border: none;
+  border-bottom: solid 1px gray;
+  line-height: 1.5;
+  padding-left: 0px;
+  font-size: 0.9em;
+}
+
+.entry-item, .attrEntry {
+  margin-top: 16px;
+}
+
+.entry-item input:focus, .attrEntry input:focus {
+  outline: none;
+  border-bottom: solid 1px var(--primary-bg-color);
+}
+
+.entry-item label, .attrEntry label {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.buttons button {
+  flex: 1 1 50%;
+  background: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--primary-bg-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.intro {
+  display: none;
+}
+
+.verifying-modal {
+  font-size: 0.9em;
+}
+
+.verificationSuccessText {
+  color: green;
+  font-size: 0.9em;
+}
+
+.error.pageLevel {
+  color: red;
+  font-size: 0.9em;
+}
+
+.error.itemLevel {
+  color: red;
+  font-size: 0.8em;
+}
+
+.error.itemLevel p {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 8px;
+}
+
+.attr ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.attr li {
+  list-style: none;
+}
+
+.helpLink {
+  display: none;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: var(--primary-bg-color);
+  font-size: 0.9em;
+}
